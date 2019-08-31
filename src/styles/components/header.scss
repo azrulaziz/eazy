@@ -1,0 +1,30 @@
+.header {
+    top: 0;
+    position: sticky;
+    padding: 5px 60px 12px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: end;
+    box-shadow: 2px 3px 3px #ccc;
+    background: #fff;
+    grid-gap: 10px;
+    
+
+    &__brand {
+        color: var(--brand-red);
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        font-weight: 100;
+
+        &-ext {
+            font-size: 0.9rem;
+        }
+    }
+
+    &__menu {
+        font-size: var(--m);
+        padding-bottom: 5px;
+        margin-left: 70px;
+    }
+
+}

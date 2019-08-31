@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: "Roboto",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--bg-grey);
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  h1 ,h2 ,h3, h4, h5, h6, p, a {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", 
+    sans-serif;
+  }
+  
+  .navlink {
+    color: var(--menu-black);
+    text-decoration: none;
+    margin: 0 20px;
+    font-family: "Open Sans";
+  }
