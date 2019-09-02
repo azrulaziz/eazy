@@ -11,8 +11,8 @@ const ListPage = ({list, dispatch, history, location}) => {
         const fetchList = async () => {
             try {
                 const res = await axios.get('http://5b35ede16005b00014c5dc86.mockapi.io/list')
+                // dispatch to redux store once after api call
                 dispatch(receiveList(res.data.data));
-                
             } catch (error) {
                 console.log(error)
             }

@@ -74,7 +74,9 @@ const MobileHeader = ({history}) => {
 
     return (
         <>
-        {renderSidebar()}
+        {/* Render a basic sidebar when browser is in mobile size.
+            This can be improved with a design guideline */}
+        {renderSidebar()} 
         <div className="header">
             <div className="header__brand" onClick={() => history.push('/')}>
                 <h2 className="header__brand-name">eazy

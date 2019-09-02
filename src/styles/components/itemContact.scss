@@ -1,13 +1,13 @@
 .itemcontact {
     display: grid;
     grid-template-columns: repeat(3, max-content);
-    grid-gap: 10px;
+    grid-gap: 5px;
     position: sticky;
     bottom: 0;
     background: #fff;
     // margin: 0 auto;
     padding: 10px 0;
-    box-shadow: 2px 3px 5px #ccc;
+    box-shadow: 2px -2px 5px #ccc;
     width: auto;
     justify-content: center;
 
@@ -42,19 +42,22 @@
     &__number {
         font-family: "Open Sans";
         color: var(--price-red);
-        font-size: 14px;
+        font-size: var(--m);
+        font-weight: 600;
     }
 
     &__email {
         font-family: "Open Sans";
         color: var(--price-red);
         font-size: var(--m);
+        font-weight: 600;
     }
 
     &__chat {
         font-family: "Open Sans";
         color: #fff;
         font-size: var(--m);
+        font-weight: 600;
     }
 
     &__icon {
@@ -96,8 +99,6 @@
         }
 
         &__number {
-            font-family: "Open Sans";
-            color: var(--price-red);
             font-size: 16px;
         }
     }

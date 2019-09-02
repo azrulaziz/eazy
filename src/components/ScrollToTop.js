@@ -1,6 +1,7 @@
 import React from 'react'
 import { withRouter } from "react-router";
 
+// Component to automatically scroll back to top when user change route.
 class ScrollToTop extends React.Component {
 
   componentDidUpdate(prevProps) {

@@ -7,6 +7,7 @@ const Header = ({history}) => {
     return (
         <div className="header">
             <div className="header__brand" onClick={() => history.push('/')}>
+                {/* hardcoded the brand logo. asset for brand logo cannot be found */}
                 <h2 className="header__brand-name">eazy
                     <span className="header__brand-ext">.my</span>
                 </h2>

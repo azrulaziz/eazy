@@ -8,6 +8,7 @@ import useWindowSize from "../functions/useWindow";
 
 const ViewPage = ({list, match, location}) => {
     const size = useWindowSize();
+    // If view page is directly accessed from url, result from api call will be save temporarily in local state
     const [itemData, setItemData] = useState({})
     const [similarItemsList, setSimilarItemsList] = useState()
 
@@ -31,6 +32,7 @@ const ViewPage = ({list, match, location}) => {
         }
 
         fetchSimilarItems()
+
         // check if no data in redux then perform api call
         if(list.length === 0) {
             fetchItem()
@@ -38,13 +40,13 @@ const ViewPage = ({list, match, location}) => {
         
     }, [location, match.params.id, list.length])
 
-    // check whether single item data comes from api or redux 
+    // check whether single item data comes from api or redux store
     const itemDetails = list.length === 0 ?  itemData : list.filter(item => item.id === match.params.id)[0];
 
     return (
         <Layout>
             <div className="view">
-                
+                {/* check which view to render based on browser size */}
                 {size.width < 768 ?
                 <MobileItemView itemDetails={itemDetails} similarItemsList={similarItemsList}/>
                 :

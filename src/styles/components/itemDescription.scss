@@ -16,13 +16,15 @@
             border-bottom: 2px solid var(--price-red);
             display: grid;
             justify-items: center;
+            font-weight: 600;
         }
 
         &-report {
             justify-self: end;
             font-size: var(--m);
-            color: #707070;
+            color: var(--item-grey);
             font-family: "Open Sans";
+            cursor: pointer;
         }
 
         &-icon {
@@ -36,6 +38,7 @@
         font-size: var(--s);
         font-family: "Open Sans";
         padding: 0 15px;
+        color: var(--menu-black);
     }
 
     &__line {

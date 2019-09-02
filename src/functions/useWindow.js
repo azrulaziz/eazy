@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+// custom hook to help components check current browser size. 
 function useWindowSize() {
 
     function getSize() {
@@ -19,7 +20,7 @@ function useWindowSize() {
       window.addEventListener('resize', handleResize);
 
       return () => window.removeEventListener('resize', handleResize);
-    }, []); // Empty array ensures that effect is only run on mount and unmount
+    }, []);
   
     return windowSize;
 }

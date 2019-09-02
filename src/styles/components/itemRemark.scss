@@ -8,7 +8,7 @@
 
     &__p {
         font-size: var(--s);
-        color: #707070;
+        color: var(--item-grey);
         font-family: "Open Sans";
     }
 
@@ -33,7 +33,7 @@
     &__options p {
         font-family: "Open Sans";
         font-size: var(--m);
-        color: #707070;
+        color: var(--item-grey);
         cursor: pointer;
     }
 
@@ -41,6 +41,7 @@
         color: var(--price-red);
         font-family: "Open Sans";
         font-weight: 600;
+        font-size: var(--xl);
     }
 
     &__seller {

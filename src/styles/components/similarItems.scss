@@ -14,7 +14,7 @@
     &__title {
         font-family: "Open Sans";
         font-weight: 600;
-        color: #707070;
+        color: var(--item-grey);
         text-transform: uppercase;
         // border: 1px solid black;
     }
@@ -45,7 +45,7 @@
         &-title {
             font-size: 10px;
             font-family: "Open Sans";
-            color: #707070;
+            color: var(--item-grey);
             min-height: 40px;
         }
 
@@ -80,11 +80,5 @@
             margin: 10px 0;
         }
 
-        &__title {
-            font-family: "Open Sans";
-            font-weight: 600;
-            color: #707070;
-            text-transform: uppercase;
-        }
     }
 }

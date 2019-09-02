@@ -1,12 +1,14 @@
 import React from 'react'
 import {MdPhone, MdEmail} from 'react-icons/md'
 import {IoIosChatboxes} from 'react-icons/io'
+import useWindowSize from "../functions/useWindow";
 
 const ItemContact = ({attr}) => {
-    
+    const size = useWindowSize();
+
     return (
         <div className="itemcontact">
-            {/* <p className="itemcontact__title">Intested with the ad? Contact the seller</p> */}
+            {size.width > 768 && <p className="itemcontact__title">Intested with the ad? Contact the seller</p>}
             <div>
                 <button className="itemcontact__button">
                     <span className="itemcontact__number"><MdPhone size={15} className="itemcontact__icon"/>{attr.phone}</span>
