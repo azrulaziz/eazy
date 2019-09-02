@@ -15,7 +15,7 @@ const ViewPage = ({list, match, location}) => {
     useEffect(() => {
         const fetchItem = async () => {
             try {
-                const res = await axios.get(`http://5b35ede16005b00014c5dc86.mockapi.io/view/${match.params.id}`)
+                const res = await axios.get(`https://5b35ede16005b00014c5dc86.mockapi.io/view/${match.params.id}`)
                 setItemData(res.data.data)
             } catch (error) {
                 console.log(error)
@@ -24,7 +24,7 @@ const ViewPage = ({list, match, location}) => {
 
         const fetchSimilarItems = async () => {
             try {
-                const res = await axios.get(`http://5b35ede16005b00014c5dc86.mockapi.io/similar/${match.params.id}`)
+                const res = await axios.get(`https://5b35ede16005b00014c5dc86.mockapi.io/similar/${match.params.id}`)
                 setSimilarItemsList(res.data.data)
             } catch (error) {
                 console.log(error)
