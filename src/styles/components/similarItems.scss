@@ -1,0 +1,90 @@
+.similaritems {
+
+    &__titlecontainer {
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15px, 123px));
+        grid-gap: 10px;
+        // max-width: 900px;
+        min-width: 230px;
+        justify-content: center; 
+        margin: 10px 0;
+    }
+
+    &__title {
+        font-family: "Open Sans";
+        font-weight: 600;
+        color: #707070;
+        text-transform: uppercase;
+        // border: 1px solid black;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15px, 123px));
+        grid-gap: 13px;
+        // max-width: 900px;
+        min-width: 230px;
+        justify-content: center; 
+        margin: 10px 0;
+    }
+
+    &__each {
+        border: 1px solid #F0F0EE;
+        width: 123px;
+        border-radius: 3px;
+        margin-bottom: 8px;
+        cursor: pointer;
+
+        &-itemdetails {
+            padding: 5px;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        &-title {
+            font-size: 10px;
+            font-family: "Open Sans";
+            color: #707070;
+            min-height: 40px;
+        }
+
+        &-price {
+            font-size: 13px;
+            color: var(--price-red);
+            font-family: "Open Sans";
+            font-weight: 600;
+        }
+
+        &-image {
+            width: 100%;
+        }
+
+    }
+}
+
+@media (min-width: 768px) {
+    .similaritems {
+        &__container {
+            justify-content: start;
+        }
+
+        &__titlecontainer {
+        
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(15px, 123px));
+            grid-gap: 13px;
+            // max-width: 900px;
+            min-width: 230px;
+            justify-content: start; 
+            margin: 10px 0;
+        }
+
+        &__title {
+            font-family: "Open Sans";
+            font-weight: 600;
+            color: #707070;
+            text-transform: uppercase;
+        }
+    }
+}

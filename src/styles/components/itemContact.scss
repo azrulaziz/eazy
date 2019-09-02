@@ -1,0 +1,104 @@
+.itemcontact {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-gap: 10px;
+    position: sticky;
+    bottom: 0;
+    background: #fff;
+    // margin: 0 auto;
+    padding: 10px 0;
+    box-shadow: 2px 3px 5px #ccc;
+    width: auto;
+    justify-content: center;
+
+    &__title {
+        font-size: var(--s);
+        color: var(--menu-black);
+        font-family: "Open Sans";
+    }
+
+    &__button {
+        background: transparent;
+        border: 1px solid var(--price-red);
+        border-radius: 3px;
+        padding: 5px 10px;
+        width: 100%;
+        margin: 4px 0;
+        text-align: left;
+        width: auto;
+    }
+
+    &__button-red {
+        background: var(--price-red);
+        border: 1px solid var(--price-red);
+        border-radius: 3px;
+        padding: 5px 10px;
+        width: 100%;
+        margin: 4px 0;
+        text-align: left;
+        width: auto;
+    }
+
+    &__number {
+        font-family: "Open Sans";
+        color: var(--price-red);
+        font-size: 14px;
+    }
+
+    &__email {
+        font-family: "Open Sans";
+        color: var(--price-red);
+        font-size: var(--m);
+    }
+
+    &__chat {
+        font-family: "Open Sans";
+        color: #fff;
+        font-size: var(--m);
+    }
+
+    &__icon {
+        transform: translateY(2px);
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .itemcontact {
+        padding: 10px 25px;
+        border: 1px solid #F0F0EE;
+        display: block;
+        position: relative;
+        padding: 10px;
+        box-shadow: none;
+        width: auto;
+        // border: 1px solid black;
+
+        &__button {
+            background: transparent;
+            border: 1px solid var(--price-red);
+            border-radius: 3px;
+            padding: 5px 10px;
+            width: 100%;
+            margin: 4px 0;
+            text-align: left;
+        }
+
+        &__button-red {
+            background: var(--price-red);
+            border: 1px solid var(--price-red);
+            border-radius: 3px;
+            padding: 5px 10px;
+            width: 100%;
+            margin: 4px 0;
+            text-align: left;
+            width: 100%;
+        }
+
+        &__number {
+            font-family: "Open Sans";
+            color: var(--price-red);
+            font-size: 16px;
+        }
+    }
+}

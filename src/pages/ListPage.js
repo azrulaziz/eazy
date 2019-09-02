@@ -19,7 +19,7 @@ const ListPage = ({list, dispatch, history, location}) => {
         }
 
         fetchList()
-    }, [])
+    }, [dispatch])
 
     return (
         <Layout>
